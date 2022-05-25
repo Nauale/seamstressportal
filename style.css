@@ -1,0 +1,383 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.topo {
+    display: flex;
+    position: relative;
+    background-image: url(./images/bobinas.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    height: 300px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+@media screen and (max-width:463px) {
+    .topo{
+        background-size: 463px;
+        background-repeat: no-repeat;
+    }
+}
+
+.titulo{
+    align-self: center;
+               
+}
+
+#t1{
+    font-family: 'Merienda One', cursive;
+    font-size: 75px;
+    font-weight: bold;
+    text-shadow: 10px 2px 10px black;
+    color: white;
+}
+
+    @media screen and (max-width:463px) {
+    #t1{
+        font-size: 40px;
+        text-align: center;
+            
+        }   
+    }    
+
+#t2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    text-shadow: 2px 2px 5px black;
+    color: white;
+    font-style: italic;
+    text-align: center;
+}
+
+@media screen and (max-width:463px) {
+    #t2{
+        font-size: 15px;
+        text-align: center;
+            
+        }   
+    }
+  
+
+.menu{
+    display: flex;
+    position: absolute;
+    bottom: 0px;
+    flex-wrap: wrap;    
+}
+
+@media screen and (max-width:525px) {
+    .menu{
+        display:flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        
+    }   
+
+}
+
+@media screen and (max-width:463px) {
+    .menu{
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }   
+
+}
+
+.botoes{
+    text-decoration: none;
+    color: white;
+    background-color: purple;
+    padding: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 10px;
+    font-size: 20px; 
+    margin-right: 25px; 
+
+    transition-property: border;
+    transition-duration: 200ms;
+}
+
+
+@media screen and (max-width:700px) {
+    .botoes{
+        padding: 3px;
+        font-size: 20px;
+        
+    }   
+
+}
+
+@media screen and (max-width:463px) {
+    .botoes{
+        margin-bottom: 5px;
+        font-size: 15px;
+    }   
+
+}
+
+.botoes:visited{
+    color: white;
+}
+
+.botoes:hover{
+    border: 2px dashed white;
+}
+
+.around1{
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+@media screen and (max-width: 463px) {
+    .around1{
+        margin-left: 50px;
+        margin-right: 50px;
+    }   
+
+}
+
+.home{
+    margin-top: 20px;
+    display: flex;
+}
+
+@media screen and (max-width:1016px) {
+    .home{
+        display: inline-block;
+        
+    }   
+
+}
+
+
+.c1{
+    align-self: center;
+}
+
+
+.h3{
+
+    font-size: 25px;
+}
+
+.p1{
+    font-size: 20px;    
+    margin-top: 30px;
+    align-self: center;
+    text-align: justify;      
+    margin-right: 10%;
+}
+
+.maquina{
+    width: 500px;
+}
+
+
+@media screen and (max-width:1016px) {
+    .maquina{
+        width: 100%;
+        height: auto;
+        
+    }   
+
+}
+
+.dashed{
+    margin-top: 5px;
+    border-top: 5px dashed purple;
+}
+
+h4{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 25px;
+    text-align: center;
+}
+
+.container{
+    display: flex;
+}
+
+.servicos{
+    font-size: 20px;
+    display: inline-block;
+    list-style-position: inside; 
+    margin-right: auto;       
+}
+
+@media screen and (max-width:463px) {
+    .servicos{
+        font-size: 15px;
+    } 
+
+}
+
+
+@media screen and (max-width:1016px) {
+    #l1{
+        margin-right: 10px;
+        
+    } 
+    
+    #l2{
+        margin-right: 10px;
+    }
+
+}
+
+.barra{
+    list-style-image: url(./images/pants.PNG);
+    margin-bottom: 10px;
+}
+
+.noiva{
+    list-style-image: url(./images/bride.PNG);
+    margin-bottom: 10px;
+}
+
+.dama{
+    list-style-image: url(./images/dama.PNG);
+    margin-bottom: 10px;
+}
+
+.madrinha{
+    list-style-image: url(./images/madrinha.PNG);
+    margin-bottom: 10px;
+}
+
+.vestido{
+    list-style-image: url(./images/vgeral.PNG);
+    margin-bottom: 10px;
+}
+
+.uniforme{
+    list-style-image: url(./images/uniform.PNG);
+    margin-bottom: 10px;
+}
+
+.roupa{
+    list-style-image: url(./images/sobmedida.PNG);
+    margin-bottom: 10px;
+}
+
+.ziper{
+    list-style-image: url(./images/ziper.PNG);
+    margin-bottom: 10px;
+}
+
+.conserto{
+    list-style-image: url(./images/conserto.PNG);
+    margin-bottom: 10px;
+}
+
+.contato{
+    margin-bottom: 20px;
+    margin-bottom: 10px;
+}
+
+.tcontato{
+    margin-bottom: 5px;
+}
+
+.email{
+    text-decoration: none;
+    color: purple;
+}
+
+.endereco{
+    text-decoration: none;
+    color: purple;
+}
+
+.containercontato{
+    padding: 20px;
+}
+
+.formulario{
+    padding: 20px;
+    background-color: #f4c6e5;
+    max-width: fit-content;
+}
+
+
+.tamanho{
+    width: 500px;
+    padding: 15px;
+    border: none;
+    outline-color: purple;
+}
+
+@media screen and (max-width:1217px) {
+    .tamanho{
+        width: 40vw;   
+    }   
+
+}
+
+input{
+    margin-bottom: 20px;    
+}
+
+input[type="submit"]{
+    color: white;
+    background-color: purple;
+    font-weight: bold;
+    padding: 10px;
+    height: fit-content;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+}
+
+textarea{
+    margin-bottom: 20px;
+}
+
+.containertodo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+@media screen and (max-width:1217px) {
+    .containertodo{
+        flex-flow: column;
+        
+    }   
+
+}
+
+footer{
+    background-color: #e5e3e4;
+    margin-top: 20px;
+}
+
+.listafooter{
+    display: flex;
+    list-style-type: none;
+    justify-content: space-around;
+    text-decoration: none;
+    color: black;
+}
+
+@media screen and (max-width:463px) {
+    .listafooter{
+        font-size: 12px;
+    } 
+
+}
+
+.myBtn{
+    background: linear-gradient(120deg, purple, #c097be);
+    border-radius: 50%;
+    position: fixed;
+    right: 10px;
+    bottom: 35px;
+    text-decoration: none;
+
+} 
+
+
